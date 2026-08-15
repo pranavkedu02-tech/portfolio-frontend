@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pranav | Full Stack Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="aurora-blob aurora-blob--1"></div>
+<div class="aurora-blob aurora-blob--2"></div>
+
+<header class="navbar" id="navbar">
+  <div class="navbar__inner">
+    <a href="#hero" class="navbar__logo">Pranav<span class="dot">.</span></a>
+    <nav class="navbar__links" id="navLinks">
+      <a href="#about" class="nav-link">About</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#education" class="nav-link">Education</a>
+      <a href="#experience" class="nav-link">Experience</a>
+      <a href="#work" class="nav-link">Work</a>
+      <a href="#achievements" class="nav-link">Achievements</a>
+      <a href="#certifications" class="nav-link">Certifications</a>
+      <a href="#contact" class="nav-link nav-link--cta">Contact</a>
+    </nav>
+    <button class="navbar__toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<section class="hero" id="hero">
+  <div class="section-inner hero__inner">
+    <div class="hero__text">
+      <p class="eyebrow"></p>
+      <div class="code-block">
+        <div class="code-block__bar">
+          <span class="code-dot code-dot--red"></span>
+          <span class="code-dot code-dot--yellow"></span>
+          <span class="code-dot code-dot--green"></span>
+          <span class="code-block__filename">about_me.js</span>
+        </div>
+        <pre class="code-block__body"><code><span class="tok-kw">const</span> <span class="tok-var">developer</span> = {
+  <span class="tok-prop">name</span>: <span class="tok-str">"Pranav"</span>,
+  <span class="tok-prop">role</span>: <span class="tok-str">"<span id="typedRole"></span><span class="type-cursor">|</span>"</span>,
+  <span class="tok-prop">stack</span>: [<span class="tok-str">"Python"</span>, <span class="tok-str">"Django"</span>, <span class="tok-str">"Android"</span>],
+  <span class="tok-prop">status</span>: <span class="tok-str">"open_to_work"</span>
+};</code></pre>
+      </div>
+      <p class="hero__summary">
+        I build clean, responsive, and scalable web applications —
+        placeholder summary text, replace with your real one-liner.
+      </p>
+      <div class="hero__actions">
+        <a href="#" class="btn btn--primary" download>Download Resume</a>
+        <a href="#contact" class="btn btn--ghost">Get in touch</a>
+      </div>
+    </div>
+    <div class="hero__photo">
+      <div class="hero__photo-frame">
+        <img src="assets/pranav.png" alt="Pranav" id="heroPhoto">
+      </div>
+      <div class="hero__photo-tag">&lt;/&gt; available for hire</div>
+    </div>
+  </div>
+  <a href="#about" class="scroll-hint" aria-label="Scroll down">
+    <span></span>
+  </a>
+</section>
+
+<section class="section" id="about">
+  <div class="section-inner">
+    <p class="eyebrow"></p>
+    <h2 class="section-title">About Me</h2>
+    <div class="about__grid">
+      <p class="about__text">
+        I’m a passionate Information Technology student and aspiring software developer with a strong interest in Full-Stack Development, Android Development, Artificial Intelligence, and Cybersecurity. I enjoy turning ideas into practical, user-focused applications and exploring new technologies to solve real-world problems.
+
+I have hands-on experience working with technologies such as Python, Django, Flask, Java, Android, JavaScript, MongoDB, PostgreSQL, Firebase, and REST APIs. I’ve developed projects ranging from AI-powered applications and enterprise management systems to Android applications and web platforms.
+
+I’m continuously improving my problem-solving and development skills through projects, internships, and technical exploration. My goal is to build scalable, secure, and innovative software solutions while growing as a professional developer.
+      </p>
+      
+    </div>
+  </div>
+</section>
+
+<section class="section" id="skills">
+  <div class="section-inner">
+    <p class="eyebrow"></p>
+    <h2 class="section-title">Technologies I Work With</h2>
+    <div class="skills-grid" id="skillsGrid"></div>
+  </div>
+</section>
+
+<section class="section" id="education">
+  <div class="section-inner">
+    <p class="eyebrow"></p>
+    <h2 class="section-title">My Academic Journey</h2>
+    <div class="timeline" id="educationTimeline"></div>
+  </div>
+</section>
+
+<section class="section" id="experience">
+  <div class="section-inner">
+    <p class="eyebrow"></p>
+    <h2 class="section-title">Internship &amp; Leadership Experience</h2>
+    <div class="card-stack" id="experienceStack"></div>
+  </div>
+</section>
+
+<section class="section" id="work">
+  <div class="section-inner">
+    <p class="eyebrow"></p>
+    <h2 class="section-title">Featured Projects</h2>
+    <div class="card-stack" id="projectsStack"></div>
+  </div>
+</section>
+
+<section class="section" id="achievements">
+  <div class="section-inner">
+    <p class="eyebrow"></p>
+    <h2 class="section-title">Awards &amp; Recognition</h2>
+    <div class="card-stack" id="achievementsStack"></div>
+  </div>
+</section>
+
+<section class="section" id="certifications">
+  <div class="section-inner">
+    <p class="eyebrow"></p>
+    <h2 class="section-title">Professional Certifications</h2>
+    <div class="cert-grid" id="certGrid"></div>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <div class="section-inner">
+    <p class="eyebrow"></p>
+    <h2 class="section-title">Let's Connect</h2>
+    <p class="contact__intro">
+      I'm always open to job opportunities, collaborations, and
+      interesting projects. Fill out the form and I'll get back to you.
+    </p>
+    <form class="contact-form" id="contactForm" novalidate>
+      <div class="form-row">
+        <label class="form-label" for="fullName">Full Name</label>
+        <input class="form-input" type="text" id="fullName" name="full_name" placeholder="Jane Doe" required>
+        <span class="form-error" id="fullNameError"></span>
+      </div>
+      <div class="form-row">
+        <label class="form-label" for="email">Email Address</label>
+        <input class="form-input" type="email" id="email" name="email" placeholder="jane@example.com" required>
+        <span class="form-error" id="emailError"></span>
+      </div>
+      <div class="form-row">
+        <label class="form-label" for="message">Message</label>
+        <textarea class="form-input form-textarea" id="message" name="message" rows="5" placeholder="Tell me about the opportunity or idea..." required></textarea>
+        <span class="form-error" id="messageError"></span>
+      </div>
+      <button type="submit" class="btn btn--primary btn--full" id="submitBtn">
+        <span id="submitBtnText">Send Message</span>
+      </button>
+      <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+<footer class="footer" id="footerGetInTouch">
+  <div class="section-inner footer__inner">
+    <h2 class="footer__name">Pranav Khatavkar</h2>
+    <p class="footer__tagline">Full Stack Developer building things for the web.</p>
+
+    <div class="social-row">
+      <a href="https://github.com/pranavkedu02-tech" class="social-pill" target="_blank" rel="noopener">
+        <img src="assets/icons/github.png" alt="" class="social-pill__icon"> GitHub
+      </a>
+      <a href="https://www.linkedin.com/in/pranav-khatavkar-2b776b3b4?utm_source=share_via&utm_content=profile&utm_medium=member_android" class="social-pill" target="_blank" rel="noopener">
+        <img src="assets/icons/linkedin.png" alt="" class="social-pill__icon"> LinkedIn
+      </a>
+      <a href="https://www.instagram.com/pranav_khatavkar75?igsh=MWh4MzV4NDAxcnEwbg==" class="social-pill" target="_blank" rel="noopener">
+        <img src="assets/icons/Insta.png" alt="" class="social-pill__icon"> Instagram
+      </a>
+    </div>
+
+    <div class="footer__meta">
+      <a href="mailto:you@example.com" class="footer__meta-item">
+        <img src="assets/icons/mail.png" alt="" class="footer__meta-icon"> khatavkarpranav75@gmail.com
+      </a>
+      <span class="footer__meta-item">
+        <img src="assets/icons/pin.png" alt="" class="footer__meta-icon"> Satara, Maharastra, India
+      </span>
+    </div>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+      <span>↑</span>
+    </button>
+
+    <hr class="footer__divider">
+    <p class="footer__copyright">© <span id="year"></span> Pranav. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
