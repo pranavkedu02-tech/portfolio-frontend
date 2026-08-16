@@ -140,6 +140,12 @@ const projectsData = [
     liveUrl: 'https://flaskauthpro.onrender.com/'
   },
   {
+    title: 'NexoraAI',
+    desc: 'Python Django Based Personal AI Chatbot',
+    tags: ['Python', 'Django', 'PostgreSQL'],
+    codeUrl: 'https://github.com/pranavkedu02-tech/NexoraAI'
+  },
+  {
     title: 'Blog App',
     desc: 'Full-Stack Blog Application Built with Python Flask',
     tags: ['Python', 'Flask'],
