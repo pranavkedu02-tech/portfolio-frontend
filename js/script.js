@@ -58,15 +58,14 @@ const skillsData = [
   { name: 'Django', icon: 'assets/icons/django.png' },
   { name: 'Android Dev', icon: 'assets/icons/Android.png' },
   { name: 'Java', icon: 'assets/icons/java.png' },
-   { name: 'Flask', icon: 'assets/icons/flask.png' },
-   { name: 'MySQL', icon: 'assets/icons/MySQL.png' },
+  { name: 'Flask', icon: 'assets/icons/flask.png' },
+  { name: 'MySQL', icon: 'assets/icons/MySQL.png' },
   { name: 'MongoDB', icon: 'assets/icons/Mongodb.png' },
   { name: 'PostgreSQL', icon: 'assets/icons/Postgresql_elephant.png' },
   { name: 'Git', icon: 'assets/icons/git.png' },
   { name: 'JavaScript', icon: 'assets/icons/js.png' },
   { name: 'HTML', icon: 'assets/icons/html.png' },
   { name: 'CSS', icon: 'assets/icons/css.png' },
-  
 ];
 
 const educationData = [
@@ -92,18 +91,45 @@ const educationData = [
 
 const experienceData = [
   {
-    date: 'Month Year – Month Year',
+    date: 'May 2024 – Jul 2024',
     title: 'Android Developer Intern',
     org: 'ProAzure Software Solutions, Pune',
-    desc: 'Worked on Android application development, UI implementation, and application functionality using modern development practices.',
-    link: { label: 'View Internship Letter', url: '#' }
+    desc: 'Developed and tested Android application features, implemented UI components, and collaborated with the team on debugging and improving app functionality using modern development practices.',
+    link: { label: 'View Internship Letter', url: 'assets/internship.png' }
   },
   {
-    date: 'Month Year – Month Year',
-    title: 'Android Developer Intern',
-    org: 'ProAzure Software Solutions, Pune',
-    desc: 'Gained hands-on experience in Android development, debugging, testing, and implementing application features.',
-    link: { label: 'View Internship Letter', url: '#' }
+    date: 'Aug 2026 – Present',
+    title: 'Co-Secretary, Hackslash Dev.',
+    org: 'Government College of Engineering, Chhatrapati Sambhajinagar',
+    desc: 'Coordinating club operations and technical events for the college\'s developer community, supporting member engagement, event planning, and communication between the core team and students.',
+    link: { label: 'View Appointment Mail', url: 'assets/hackslash.png' }
+  },
+  {
+    date: 'Mar 2026',
+    title: 'WINGS 2K26 – Marketing Outreach Team',
+    org: 'Government College of Engineering, Chhatrapati Sambhajinagar',
+    desc: 'Contributed to promotional outreach for the college\'s annual technical festival, helping drive participation and visibility through coordinated marketing efforts.',
+    link: { label: 'View Photo', url: 'assets/marketing.png' }
+  },
+  {
+    date: 'Mar 2026',
+    title: 'WINGS 2K26 – Room 404 Coordinator',
+    org: 'Government College of Engineering, Chhatrapati Sambhajinagar',
+    desc: 'Managed on-ground coordination for an event zone during the festival, handling logistics, participant flow, and troubleshooting to ensure smooth execution.',
+    link: { label: 'View Certificate', url: 'assets/404.png' }
+  },
+  {
+    date: 'Mar 2025',
+    title: 'FusionX 2K25 – Media & Technical Team',
+    org: "Navsahyadri Education Society's Group of Institutions, Pune",
+    desc: 'Supported media coverage and technical setup for the festival, assisting with equipment, event documentation, and on-site technical troubleshooting.',
+    link: { label: 'View Photo', url: 'assets/fusion.png' }
+  },
+  {
+    date: 'Sep 2024 – May 2025',
+    title: 'Academic Coordinator, ACES',
+    org: "Navsahyadri Education Society's Group of Institutions, Pune",
+    desc: 'Coordinated academic activities and events for the student association, liaising between students and faculty to organize sessions and track participation.'
   },
 ];
 
@@ -125,7 +151,8 @@ const projectsData = [
     title: 'EduNotes',
     desc: 'Android-Based Teacher–Student Collaboration and Resource Management System',
     tags: ['Android', 'Firebase'],
-    liveUrl: 'https://ijarsct.co.in/Paper25338.pdf'
+    liveUrl: 'https://ijarsct.co.in/Paper25338.pdf',
+    liveLabel: 'View Research Paper'
   },
   {
     title: 'EMS Pro',
@@ -161,7 +188,6 @@ const achievementsData = [
     desc: 'Secured First Rank in the Third Year of Computer Engineering.',
     link: { label: 'View Certificate', url: 'assets/first_rank.png' }
   },
-
   {
     date: '02 May 2025',
     title: 'Student of the Year – TYCO',
@@ -169,7 +195,6 @@ const achievementsData = [
     desc: 'Recognized as Student of the Year for outstanding academic performance and overall achievement.',
     link: { label: 'View Certificate', url: 'assets/student_of_the_year.png' }
   },
-
   {
     date: '22 February 2025',
     title: 'Rising Star Award',
@@ -177,7 +202,6 @@ const achievementsData = [
     desc: 'Recognized for exceptional performance, dedication, and contribution to academic and extracurricular activities.',
     link: { label: 'View Certificate', url: 'assets/raising_star.png.png' }
   },
-
   {
     date: '28 January 2025',
     title: 'Second Rank – TYCO',
@@ -185,18 +209,13 @@ const achievementsData = [
     desc: 'Secured Second Rank in the Third Year of Computer Engineering.',
     link: { label: 'View Certificate', url: 'assets/second_rank.png' }
   },
-
   {
     date: '15 September 2024',
     title: 'Programming Competition Winner',
     org: "Navsahyadri Education Society's Group of Institutions, Pune",
     desc: 'Won a programming competition by demonstrating strong problem-solving and programming skills.',
-    link: { label: 'View Certificate', url: 'assets/raising_star.png.jfif' }
+    link: { label: 'View Certificate', url: 'assets/winner.png' }
   },
-];
-
-const certificationsData = [
-  { title: 'Certification Name', org: 'Issuing Organization', url: '#' },
 ];
 
 function renderSkills() {
@@ -224,8 +243,10 @@ function renderProjects() {
     <div class="info-card reveal"><h3 class="info-card__title">${i.title}</h3>
       <p class="info-card__desc">${i.desc}</p>
       <div class="tag-row">${i.tags.map(t => `<span class="tag">${t}</span>`).join('')}</div>
-      <div class="card-link-row"><a href="${i.codeUrl}" class="card-link" target="_blank" rel="noopener">View Code ↗</a>
-      ${i.liveUrl ? `<a href="${i.liveUrl}" class="card-link" target="_blank" rel="noopener">Live Demo ↗</a>` : ''}</div>
+      <div class="card-link-row">
+      ${i.codeUrl ? `<a href="${i.codeUrl}" class="card-link" target="_blank" rel="noopener">View Code ↗</a>` : ''}
+      ${i.liveUrl ? `<a href="${i.liveUrl}" class="card-link" target="_blank" rel="noopener">${i.liveLabel || 'Live Demo'} ↗</a>` : ''}
+      </div>
     </div>`).join('');
 }
 function renderAchievements() {
@@ -236,16 +257,9 @@ function renderAchievements() {
       ${i.link ? `<div class="card-link-row"><a href="${i.link.url}" class="card-link" target="_blank" rel="noopener">${i.link.label} ↗</a></div>` : ''}
     </div>`).join('');
 }
-function renderCertifications() {
-  document.getElementById('certGrid').innerHTML = certificationsData.map(i => `
-    <div class="cert-card reveal"><div class="cert-card__icon">🏅</div>
-      <h3 class="cert-card__title">${i.title}</h3><p class="cert-card__org">${i.org}</p>
-      <a href="${i.url}" class="card-link" target="_blank" rel="noopener">View Certificate ↗</a>
-    </div>`).join('');
-}
 
 renderSkills(); renderEducation(); renderExperience();
-renderProjects(); renderAchievements(); renderCertifications();
+renderProjects(); renderAchievements();
 observeReveals();
 
 document.getElementById('backToTop').addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
