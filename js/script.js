@@ -148,6 +148,13 @@ const projectsData = [
     liveUrl: 'https://fusionx2k26.netlify.app/'
   },
   {
+    title: 'Neon Notes',
+    desc: 'MERN Stack Notes Management Application',
+    tags: ['React', 'Node.js', 'MongoDB'],
+    codeUrl: 'https://github.com/pranavkedu02-tech/mern-neon-notes',
+    liveUrl: 'https://mern-neon-notes.vercel.app'
+  },
+  {
     title: 'EduNotes',
     desc: 'Android-Based Teacher–Student Collaboration and Resource Management System',
     tags: ['Android', 'Firebase'],
