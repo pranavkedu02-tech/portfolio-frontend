@@ -151,7 +151,7 @@ const projectsData = [
     title: 'SpendNote',
     desc: 'Android Based Personal Expense Manager',
     tags: ['Android','Local .txt','Java'],
-    liveUrl: 'https://fusionx2k26.netlify.app/'
+    liveUrl: 'https://spendnote-app.netlify.app/'
   },
   {
     title: 'Neon Notes',
