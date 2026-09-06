@@ -148,6 +148,12 @@ const projectsData = [
     liveUrl: 'https://fusionx2k26.netlify.app/'
   },
   {
+    title: 'SpendNote',
+    desc: 'Android Based Personal Expense Manager',
+    tags: ['Android','Local .txt','Java'],
+    liveUrl: 'https://fusionx2k26.netlify.app/'
+  },
+  {
     title: 'Neon Notes',
     desc: 'MERN Stack Notes Management Application',
     tags: ['React', 'Node.js', 'MongoDB'],
