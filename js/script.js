@@ -62,6 +62,7 @@ const skillsData = [
   { name: 'MySQL', icon: 'assets/icons/MySQL.png' },
   { name: 'MongoDB', icon: 'assets/icons/Mongodb.png' },
   { name: 'PostgreSQL', icon: 'assets/icons/Postgresql_elephant.png' },
+  { name: 'Firebase', icon: 'assets/icons/firebase.png' },
   { name: 'Git', icon: 'assets/icons/git.png' },
   { name: 'JavaScript', icon: 'assets/icons/js.png' },
   { name: 'HTML', icon: 'assets/icons/html.png' },
@@ -94,13 +95,23 @@ const experienceData = [
     date: 'May 2024 – Jul 2024',
     title: 'Android Developer Intern',
     org: 'ProAzure Software Solutions, Pune',
+    logo: 'assets/icons/proazure.png',
     desc: 'Developed and tested Android application features, implemented UI components, and collaborated with the team on debugging and improving app functionality using modern development practices.',
     link: { label: 'View Internship Letter', url: 'assets/internship.png' }
+  },
+  {
+    date: 'Sep 2026 – Present',
+    title: 'General Secretary, Information Technology Student Association',
+    org: 'Government College of Engineering, Chhatrapati Sambhajinagar',
+    logo: 'assets/icons/geccs.png',
+    desc: 'Serving as the General Secretary of the Information Technology Students Association (ITSA), responsible for coordinating student activities, managing communication, supporting event planning, maintaining records, and working with the team to organize technical, educational, and extracurricular initiatives for students.',
+    link: { label: 'View Result', url: 'assets/itsa.png' }
   },
   {
     date: 'Aug 2026 – Present',
     title: 'Co-Secretary, Hackslash Dev.',
     org: 'Government College of Engineering, Chhatrapati Sambhajinagar',
+    logo: 'assets/icons/geccs.png',
     desc: 'Coordinating club operations and technical events for the college\'s developer community, supporting member engagement, event planning, and communication between the core team and students.',
     link: { label: 'View Appointment Mail', url: 'assets/hackslash.png' }
   },
@@ -108,6 +119,7 @@ const experienceData = [
     date: 'Mar 2026',
     title: 'WINGS 2K26 – Marketing Outreach Team',
     org: 'Government College of Engineering, Chhatrapati Sambhajinagar',
+    logo: 'assets/icons/geccs.png',
     desc: 'Contributed to promotional outreach for the college\'s annual technical festival, helping drive participation and visibility through coordinated marketing efforts.',
     link: { label: 'View Photo', url: 'assets/marketing.png' }
   },
@@ -115,6 +127,7 @@ const experienceData = [
     date: 'Mar 2026',
     title: 'WINGS 2K26 – Room 404 Coordinator',
     org: 'Government College of Engineering, Chhatrapati Sambhajinagar',
+    logo: 'assets/icons/geccs.png',
     desc: 'Managed on-ground coordination for an event zone during the festival, handling logistics, participant flow, and troubleshooting to ensure smooth execution.',
     link: { label: 'View Certificate', url: 'assets/404.png' }
   },
@@ -122,6 +135,7 @@ const experienceData = [
     date: 'Mar 2025',
     title: 'FusionX 2K25 – Media & Technical Team',
     org: "Navsahyadri Education Society's Group of Institutions, Pune",
+    logo: 'assets/icons/nesgi.png',
     desc: 'Supported media coverage and technical setup for the festival, assisting with equipment, event documentation, and on-site technical troubleshooting.',
     link: { label: 'View Photo', url: 'assets/fusion.png' }
   },
@@ -129,6 +143,7 @@ const experienceData = [
     date: 'Sep 2024 – May 2025',
     title: 'Academic Coordinator, ACES',
     org: "Navsahyadri Education Society's Group of Institutions, Pune",
+    logo: 'assets/icons/nesgi.png',
     desc: 'Coordinated academic activities and events for the student association, liaising between students and faculty to organize sessions and track participation.'
   },
 ];
@@ -245,7 +260,9 @@ function renderEducation() {
 }
 function renderExperience() {
   document.getElementById('experienceStack').innerHTML = experienceData.map(i => `
-    <div class="info-card reveal"><p class="info-card__date">${i.date}</p>
+    <div class="info-card reveal">
+      ${i.logo ? `<img src="${i.logo}" alt="${i.org} logo" class="info-card__logo">` : ''}
+      <p class="info-card__date">${i.date}</p>
       <h3 class="info-card__title">${i.title}</h3><p class="info-card__org">${i.org}</p>
       <p class="info-card__desc">${i.desc}</p>
       ${i.link ? `<div class="card-link-row"><a href="${i.link.url}" class="card-link" target="_blank" rel="noopener">${i.link.label} ↗</a></div>` : ''}
