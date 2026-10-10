@@ -1046,6 +1046,20 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   transform: scale(1);
 }
 
+.info-card__logo {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+
 .info-card__date { 
   font-family: var(--font-mono); 
   font-size: 13px; 
@@ -1059,6 +1073,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   font-size: 22px; 
   font-weight: 600; 
   margin-bottom: 4px;
+  max-width: calc(100% - 90px);
   background: linear-gradient(135deg, var(--color-ink), var(--color-muted));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1651,6 +1666,17 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 
   .hero__actions {
     flex-direction: column;
+  }
+
+  .info-card__logo {
+    width: 43px;
+    height: 43px;
+    top: 16px;
+    right: 16px;
+  }
+
+  .info-card__title {
+    max-width: calc(100% - 48px);
   }
 }
 

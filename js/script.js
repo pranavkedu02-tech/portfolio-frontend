@@ -162,6 +162,14 @@ const projectsData = [
     tags: ['Tailwind CSS'],
     liveUrl: 'https://fusionx2k26.netlify.app/'
   },
+   {
+    title: 'DevResolve AI',
+    desc: 'AI-powered debugging assistant that helps developers analyze programming errors, identify potential root causes, and generate actionable solutions using LLM technology.',
+    tags: ['Django', 'Groq', 'MongoDB'],
+    liveUrl: 'https://devresolveai-frontend.vercel.app/'
+  },
+
+
   {
     title: 'SpendNote',
     desc: 'Android Based Personal Expense Manager',
