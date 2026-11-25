@@ -162,6 +162,13 @@ const projectsData = [
     tags: ['Tailwind CSS'],
     liveUrl: 'https://fusionx2k26.netlify.app/'
   },
+  {
+  title: 'APIWatch',
+  desc: 'A reusable Python API Monitoring and Testing Toolkit featuring synchronous and asynchronous requests, automatic retries, response validation, API history tracking, CLI support, and JSON/CSV report exports.',
+  tags: ['Python', 'PyPI', 'Pytest', 'SQLite', 'Async Programming'],
+  codeUrl: 'https://github.com/pranavkedu02-tech/APIWatch',
+  liveUrl: 'https://pypi.org/project/pulseapi-toolkit/'
+},
    {
     title: 'DevResolve AI',
     desc: 'AI-powered debugging assistant that helps developers analyze programming errors, identify potential root causes, and generate actionable solutions using LLM technology.',
